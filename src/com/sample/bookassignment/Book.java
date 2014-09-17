@@ -9,10 +9,10 @@ public class Book {
     private String bookTitle;
     private String bookGenre;
 
-    public Book()
+    public Book(String bookAuthor, String bookTitle)
     {
-        bookAuthor = "";
-        bookTitle = "";
+        this.bookAuthor = bookAuthor;
+        this.bookTitle = bookTitle;
         bookGenre = "";
         booksInLibrary = booksInLibrary + 1;
     }
@@ -25,17 +25,17 @@ public class Book {
         return bookAuthor;
     }
 
-    public void setBookAuthor(String bookAuthor) {
+/*    public void setBookAuthor(String bookAuthor) {
         this.bookAuthor = bookAuthor;
-    }
+    }*/
 
     public String getBookTitle() {
         return bookTitle;
     }
 
-    public void setBookTitle(String bookTitle) {
+/*    public void setBookTitle(String bookTitle) {
         this.bookTitle = bookTitle;
-    }
+    }*/
 
     public String getBookGenre() {
         return bookGenre;
